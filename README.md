@@ -85,7 +85,7 @@ As a ___,  I want to be able to ___, so that ___.
  <br>
 
 
-## Thin through the pages we need in our app
+## Think through the pages we need in our app
 - Home
 - Posts#index
 - Posts#show
