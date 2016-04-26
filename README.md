@@ -8,7 +8,9 @@
 3. Model our Data
 4. Think through the pages we need in our app 
 
----
+
+
+
 ## Questions
 	
 1. What are we building?<br> 
@@ -36,7 +38,9 @@
 		- Contact form
 		- Sendgrid
 		- User (Devise)
----
+
+
+
 	
 ## User Stories
 
@@ -58,7 +62,8 @@ As a ___,  I want to be able to ___, so that ___.
 		  me through a form on my site. 
 - As a user, I want visitors to be able to leave comments on my posts		  
 	
----
+	
+	
 	
 ## Modeling our Data	
 
@@ -78,7 +83,8 @@ As a ___,  I want to be able to ___, so that ___.
 	Devise will take care   
    
  <br>
----
+
+
 ## Thin through the pages we need in our app
 - Home
 - Posts#index
