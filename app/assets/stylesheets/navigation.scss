@@ -1,0 +1,113 @@
+/*------------------------
+---------Variables--------
+-------------------------*/
+
+$alpha-orange: rgba(200,55,0,.7);
+$alpha-yellow: rgba(240,200,0,.7);
+$header-font:  'Black Ops One', cursive;
+
+
+/*------------------------
+------End Variables-------
+-------------------------*/
+
+/*------------------------
+ ------NAVIGATION---------
+-------------------------*/
+
+.navbar {
+	// background-color: #5b5b5b ;
+	background: transparent;
+	// border-bottom: 3px #c83700 solid;
+	border-bottom: none;
+	font-size: 2em;
+	margin-top: 50px;
+}
+.container-fluid>.navbar-collapse, 
+.container-fluid>.navbar-header, 
+.container>.navbar-collapse, 
+.container>.navbar-header {
+	margin-right: 0;
+	margin-left: 0;
+}
+.nav-scrolled {
+	margin-top: 5px;
+	background-color: #fff;
+}
+
+.navbar-nav>li {
+
+	background-color: $alpha-orange;
+	margin-right: 10px;
+}
+.navbar-inverse .navbar-nav {
+	margin-right: 15px;
+}
+
+.navbar-inverse .navbar-toggle {
+	margin-right: 25px;
+}
+
+.navbar-inverse .navbar-collapse {
+	// background-color: red;
+}
+.dropdown-menu {
+	background-color:#5b5b5b;
+}
+
+.navbar-inverse .navbar-nav>.active>a:hover {
+	// background-color: #c83700 ;
+	transition: color 600ms;
+}
+
+.navbar-inverse .navbar-nav>li>a , .dropdown-menu>li>a {
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+
+	-webkit-transition: all 600ms;
+					transition: all 600ms;
+
+	-webkit-transition-property: color;
+					transition-property: color;
+
+	&:hover {
+		color: #c83700;
+		background-color: $alpha-yellow;
+	}
+}
+
+
+.projectName a {
+	display: inline-block;
+	text-decoration: none;
+	font-family: $header-font;
+	margin: 3px 15px 0;
+	color: $alpha-yellow;
+	font-size: 2em;
+}
+
+
+@media(max-width:767px) {
+	.navbar {
+		background-color: rgba(0,0,0,.6);
+		margin-top: 0;
+	}
+	.navbar-nav>li {
+		background-color: $alpha-orange;
+		margin: 10px 0;
+
+	}
+
+	.navbar-inverse .navbar-nav {
+		margin-right: 0;
+	}
+
+	.projectName a {
+		font-size: 1.5em;
+}
+	}
+
+/*------------------------
+------END NAVIGATION------
+-------------------------*/
