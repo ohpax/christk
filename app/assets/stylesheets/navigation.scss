@@ -1,15 +1,5 @@
-/*------------------------
----------Variables--------
--------------------------*/
+@import "global";
 
-$alpha-orange: rgba(200,55,0,.7);
-$alpha-yellow: rgba(240,200,0,.7);
-$header-font:  'Black Ops One', cursive;
-
-
-/*------------------------
-------End Variables-------
--------------------------*/
 
 /*------------------------
  ------NAVIGATION---------
@@ -84,7 +74,7 @@ $header-font:  'Black Ops One', cursive;
 	font-family: $header-font;
 	margin: 3px 15px 0;
 	color: $alpha-yellow;
-	font-size: 2em;
+	font-size: 36px;
 }
 
 

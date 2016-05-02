@@ -1,18 +1,6 @@
 
-/*------------------------
----------Variables--------
--------------------------*/
+@import "global";
 
-$alpha-orange: rgba(200,55,0,.7);
-$alpha-yellow: rgba(240,200,0,.7);
-$header-font:  'Black Ops One', cursive;
-
-
-
-
-/*------------------------
-------End Variables-------
--------------------------*/
 
 
 
@@ -29,12 +17,13 @@ body {
 
 h1,h2,h3,h4,h5,h6 {
 	font-family: $header-font;
+		color: #545454;
+
 }
 
 h1 {
 	text-align: center;
 	font-size: 3em;
-	color: #5b5b5b;
 	margin: 50px auto;
 }
 
@@ -65,12 +54,11 @@ a{
 .lined-h {
 	text-align: center;
 	line-height: 0.4em;
-	margin-bottom: 50px;
 
+	margin-bottom: 50px;
 	span {
 		display: inline-block;
 		position: relative;  
-
 		&:before,
 		&:after {
 			content: "";
@@ -79,7 +67,7 @@ a{
 			border-bottom: 2px solid $alpha-yellow;
 			border-top: 2px solid $alpha-yellow;
 			top: 0;
-			width: 40%;
+			width: 100px;
 		}
 		&:before {
 			right: 100%;
@@ -94,7 +82,11 @@ a{
 
 
 
-
+.date {
+	font-size: .9em;
+	color: $gray;
+	margin-top: 0;
+}
 
 
 
@@ -148,6 +140,10 @@ a{
 			padding-left: 5%;
 			padding-right: 5%;
 
+			h3{
+				margin-bottom: .1em;
+			}
+
 			h3:not(:first-of-type) {
 				margin-top: 50px;
 			}
@@ -188,7 +184,8 @@ a{
 						margin-top: 40%;
 						padding: 15px 10px;
 
-						background-color: rgba(200,55,0,.9);
+						// background-color: rgba(200,55,0,.9);
+						background-color: $alpha-orange;
 						text-decoration: none;
 						color: #fff;
 						text-align: center;
@@ -233,365 +230,9 @@ a{
 
 
 
-/*------------------------
----------Footer-----------
--------------------------*/
 
-footer {
-	height: 100px;
-	background-color: #000;
-	text-align: left;
-	position: relative;
-	border-top: 3px $alpha-yellow solid;
-	color: #fff;
-	overflow:hidden;
 
-}
 
-.social-icons {
-	padding: 0;
-	margin-bottom: 10px;
-	background-color: none;
-	text-align: center;
-	position: relative;
-	height: 100px;
-	z-index: 1;
-	
-	ul {
-		margin-top: 10px;
-		margin-left: 15px;
-		padding: 0;	
-		font-size: 4em;
-
-		i {
-			margin: 10px 15px;
-		}
-	}
-
-	&:after {
-		background: $alpha-yellow;
-		display:block;
-		content:'';
-		width:100%;
-		height:600px;
-		-webkit-transform: skew(-20deg) rotate(15deg);
-		-moz-transform: skew(-20deg) rotate(15deg);
-		-o-transform: skew(-20deg) rotate(15deg);
-		transform: skew(-20deg) rotate(15deg);
-		position:absolute;
-		top:-35px;
-		left: -10%;
-		z-index:-1;
-
-	}
-
-
-	&:before {
-		background: $alpha-orange;
-		display:block;
-		content:'';
-		width:15%;
-		height:600px;
-		-webkit-transform: skew(-20deg) rotate(15deg);
-		-moz-transform: skew(-20deg) rotate(15deg);
-		-o-transform: skew(-20deg) rotate(15deg);
-		transform: skew(-20deg) rotate(15deg);
-		position:absolute;
-		top:-35px;
-		left: -35%;
-		z-index:-1;
-
-	}
-
-}
-
-@media(max-width:767px) { 
-	.social-outer {
-		background-color: $alpha-yellow;
-		position: relative;
-		height: 100px;
-		margin:0;
-
-		-webkit-transform: skew(0deg) rotate(0deg);
-		-moz-transform: skew(0deg) rotate(0deg);
-		-o-transform: skew(0deg) rotate(0deg);
-		transform: skew(0deg) rotate(0deg);
-	}
-
-	.social-icons {
-		position: inherit;
-		padding: 0;
-		margin-bottom: 0px;
-		background-color: none;
-		text-align: center;
-
-		-webkit-transform: skew(0deg) rotate(0deg);
-		-moz-transform: skew(0deg) rotate(0deg);
-		-o-transform: skew(0deg) rotate(0deg);
-		transform: skew(0deg) rotate(0deg);
-
-		&:after {
-			display: none;
-		}
-
-		&:before {
-
-			position:re;
-			top: 0;
-			left: 0;
-			height: 10px;
-			width: 165px;
-			-webkit-transform: skew(0deg) rotate(0deg);
-			-moz-transform: skew(0deg) rotate(0deg);
-			-o-transform: skew(0deg) rotate(0deg);
-			transform: skew(0deg) rotate(0deg);
-		}
-
-	}
-	footer {
-		height: 200px;
-
-		overflow:auto;
-
-	}
-
-}
-
-
-.copyright {
-	text-align: bottom;
-	margin-left: 20px;
-	margin-bottom: 10px;
-	margin-top: 60px;
-	bottom: 0;
-	font-size: 1.1em;
-}
-
-/*------------------------
---------End Footer--------
--------------------------*/
-
-
-
-
-
-
-/*-------------------------
----------About Page--------
---------------------------*/
-.second-row {
-	background-color: #fff;
-	margin-top: -50px;
-	padding-top: 50px;
-	min-height: 50px;
-}
-.intro-wrapper {
-	background: transparent;
-	font-weight:bold;
-	width: 400px;
-	height: 400px;
-	position:relative;
-	overflow:hidden;
-  // margin-left: 10%;
-  h2 {
-  	text-transform: uppercase;
-  	word-spacing: .3em;
-  	font-size: 2.5em;
-  	font-weight: 700;
-  	// color: #fff;
-  	-webkit-transform: rotate(-65.7deg);
-  	-moz-transform: rotate(-65.7deg);
-  	-o-transform: rotate(-65.7deg);
-  	transform: rotate(-65.7deg);
-
-  	text-align: center;
-
-
-  	margin-top: 13px;
-  	margin-left: -204px;
-  	color: $alpha-orange;
-  	font-family: 'Black Ops One', cursive;
-
-
-
-  }
-  .property {
-  	width: 205px;
-  	float: right;
-  	font-size: 1.1em;
-  	margin-top: -90px;
-    // font-family: 'Comfortaa', cursive;
-  }
-}
-
-.intro-wrapper:before {
-	background: $alpha-yellow;
-	display:block;
-	content:'';
-	width:200px;
-	height:400px;
-	-webkit-transform: skew(10deg);
-	-moz-transform: skew(10deg);
-	-o-transform: skew(10deg);
-	position:absolute;  
-	top:-20px;
-	left:10px;
-	z-index:0;
-}
-.intro-wrapper:after {
-	background: $alpha-orange;
-	display:block;
-	content:'';
-	width:282px;
-	height:400px;
-	-webkit-transform: skew(-20deg) rotate(5deg);
-	-moz-transform: skew(-20deg) rotate(5deg);
-	-o-transform: skew(-20deg) rotate(5deg);
-	transform: skew(-20deg) rotate(5deg);
-	position:absolute;
-	top:-13px;
-	right:20px;
-	z-index:0;
-}
-.intro {
-	display:block;
-	position:relative;
-	box-sizing: border-box;
-	z-index:1;
-	padding:15px 40px;
-	width:100%;
-	margin-top: 100px;
-
-
-
-}
-@media(max-width:480px) {
-	.intro-wrapper {
-		margin-left: auto;
-		margin-right: auto;
-	}
-
-
-}
-@media(max-width:400px) {
-	.intro-wrapper {
-		width: 100%;
-		h2 {
-			margin-left: 0;
-			-webkit-transform: rotate(0deg);
-			-moz-transform: rotate(0deg);
-			-o-transform: rotate(0deg);
-			transform: rotate(0deg);
-		}	
-		.property {
-			margin-top: 0;
-		}
-	}
-	.intro {
-		margin-top: 30px;
-	}
-
-}
-
-
-.intro a {
-	color: #fff;
-	text-decoration: underline;
-}
-#about-page {
-	font-size: 1.3em;
-
-}
-#about-row {
-	background: url("<%= asset_path 'christ4.jpg' %>") no-repeat;
-	background-size: cover;
-	background-attachment: fixed;
-}
-
-@media(max-width:480px) {
-	#about-row {
-		background: url("../img/christ3.jpg");
-		background-size: cover;
-		background-attachment: fixed;
-
-
-	}
-}
-
-.column {
-	display: inline-block;
-	float: left;
-	width: 30%;
-	padding: 0 20px;
-}
-
-
-
-.skills {
-	background: rgba(200,55,0,.7);
-	color:#fff;
-	padding-top: 30px;
-	padding-bottom: 30px;
-	text-align: center;
-}
-
-#skill-list {
-	display: inline-block;
-	margin: auto;
-	padding: 0;
-	list-style: none;
-}
-
-#skill-list li {
-	display: inline-block;
-	text-align: center;
-	margin-right: 10px;
-}
-
-.skills .glyphicon-check {
-	padding:5px;
-}
-
-.skills h2 {
-	text-align: left;
-	padding-left: 15px;
-}
-
-
-
-#video-box {
-	padding-top: 30px;
-	padding-bottom: 30px;
-}
-
-.modal-button {
-	display: block;
-	margin: 15px auto;
-}
-
-#modalembed {
-	height: 500px;
-	width:100%;
-	padding: 10px;
-}
-
-.modal-dialog {
-	background: rgba(200,55,0,.9);
-	-webkit-border-radius:5px;
-	border-radius: 5px;
-}
-
-.modal-title {
-	color: #fff;
-}
-
-.close {
-	color: #fff;
-	opacity: 1;
-}
-/*------------------------
-------End About Page------
--------------------------*/
 
 
 

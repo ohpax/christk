@@ -24,7 +24,7 @@
   <%= csrf_meta_tags %>
 </head>
 
-<body data-spy="scroll" data-target=".navbar">
+<body>
 
       <!-- navbar start here-->
       <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -37,23 +37,13 @@
               <span class="icon-bar"></span>
             </button>
             <div class="projectName navbar-brand hidden">
-              <a href="#">Christ Kho</a>
+              <%= link_to "Christ Kho", root_path %>
+              <!-- <a href="#">Christ Kho</a> -->
             </div>  <!-- end projectName -->
           </div> <!-- end navbar-header-->
           <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
               <li><a href="#works-page">Works</a></li>
-              <!-- <li role="presentation" class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                Services <span class="caret"></span>
-              </a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Web Design</a></li>
-                <li><a href="#">Development</a></li>
-                <li><a href="#">Hosting & Domain</a></li>
-                <li><a href="#">SEO</a></li>
-              </ul>
-
-            </li> -->
             <li><a href="#about-page">About</a></li>
             <li><a href="#contact-page">Contact</a></li>
             <li><a href="#faq-page">Blog</a></li>
@@ -62,8 +52,10 @@
         
       </nav> <!-- end nav container -->
     </div> <!-- end navbar -->
+  <div class="middle">
+    <%= yield %>
+  </div>
 
-<%= yield %>
 <footer>
   <div class="container-fluid">
     <div class="row">
@@ -73,9 +65,9 @@
       <div class="col-sm-6 social-outer">
         <div class="social-icons">
             <ul>
-              <i class="fa fa-github" aria-hidden="true"></i>
-              <i class="fa fa-twitter" aria-hidden="true"></i>
-              <i class="fa fa-linkedin" aria-hidden="true"></i>
+              <a href="https://github.com/ohpax" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+              <a href="https://twitter.com/ChristElison" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+              <a href="http://www.linkedin.com/in/christkho" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
             </ul>
           </div>
       </div>
