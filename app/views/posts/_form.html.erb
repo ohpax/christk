@@ -1,4 +1,6 @@
-<%= form_for @post do |f| %>
+<div class="container">
+	
+<%= form_for(@post, html: {class: "form-horizontal"}) do |f| %>
 	<% if @post.errors.any? %>
 		<h2> <%= pluralize(@post.errors.count, "error") %> prevented this post from saving:</h2>
 		
@@ -9,17 +11,18 @@
 		</ul>
 	<% end %>
 	
-	<%= f.label :title %> <br>
-	<%= f.text_field :title %>
+	<div class="form-group">
+		<%= f.label :title, class: "control-label" %> 
+		<%= f.text_field :title, class: "form-control" %>
+	</div>
 
 	<br>
 	<br>
-
-	<%= f.label :content, "Write you article here" %> <br>
-	<%= f.text_area :content %>
+	<div class="form-group">
+		<%= f.label :content, "Write you article here", class: "control-label" %> 
+		<%= f.text_area :content, rows: 25, class: "form-control" %>
+	</div>
 	
-	<br>
-	<br>
-
 	<%= f.submit %>
 <% end %>
+</div>

@@ -30,8 +30,10 @@ $(document).on('ready page:load', function() {
 	}).mouseleave(function(){
 		$(".info",this).fadeOut(300);
 		$(".work",this).removeClass("blur");
-
-
 	});
+
+	// Centering images in posts
+
+	$(".post img").parents('p').css("text-align", "center");
 
 });
