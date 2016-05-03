@@ -1,0 +1,58 @@
+@import "global";
+
+.border{
+		&:after {
+			content: "";
+			position: absolute;
+			height: 8px;
+			border-bottom: 2px solid $alpha-yellow;
+			border-top: 2px solid $alpha-yellow;
+			top: 294px;
+			width: 100%;
+		}
+
+	}
+	.header-small-outer {
+				// background: url("<%= asset_path 'christ4.jpg' %>") ;
+						position: static;
+								height: 300px;
+	}
+	.header-small{
+	 background: rgba(0,0,0,.1); 
+	 // border-bottom: double 20px $alpha-yellow;
+
+			 	position: absolute;
+								height: 300px;
+								display: table;
+								width: 100%;
+
+
+					.logo {
+			a{
+				z-index: 10000;
+				color: $alpha-yellow;
+				font-size: 36px;
+				display: inline-block;
+				position: absolute;
+				text-decoration: none;
+				font-family: $header-font;
+				top: 50px;
+				left: 40px;
+			}
+
+		}
+
+	 .quote {
+	 	padding: 0 10% 50px;
+	 	vertical-align: bottom;
+	 	display: table-cell;
+
+
+	 	 h2{
+	 	 	margin: .2em auto;
+	 	 }
+
+	 }
+
+	
+	}

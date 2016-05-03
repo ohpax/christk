@@ -1,19 +1,7 @@
 <div class="post-show">
-	<div class="container-fluid header-small-outer">
-		<div class="header-small">
-			<div class="logo">
-				<%= link_to "Christ Kho", root_path %>
-			</div>
-			<div class="quote">
-				<h2>Good things come to people who wait,</h2>
-				<h2> but better things come to those who go out and get them.</h2>
-				<h2><small>Anonymous</small><h2>
-			</div>
-			
-		</div>
-	</div>
-	<div class="border"></div>
-	<div class="post">
+		<%= render 'shared/header' %>
+
+	<div id="post" class="skinny_wrapper">
 		<h1><%= @post.title %></h1>
 		<p class="date lined-h"><span><%= @post.created_at.strftime("%A, %b %d") %></span></p>
 		<div class="body">
@@ -22,7 +10,7 @@
 
 
 		<div id="share-box">
-			<h3 class="lined-h"><span>Share the post</span> </h3>
+			<h3 class="lined-h"><span>Share</span> </h3>
 			<!-- Twitter -->
     <a onclick="javascript:window.open('http://twitter.com/share?text=<%= @post.title %> by @ChristElison - &amp;url=<%= url_for([@post, {only_path: false}]) %>', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-twitter"></i></a>
     <!-- Facebook -->

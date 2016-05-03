@@ -1,6 +1,6 @@
 <div class="article">
   <h3><%= post.title %></h3>
   <p class="date"><%= post.created_at.strftime("%A, %b %d") %></p>
-  <p><%= post.content.truncate(250) %></p>
+  <p><%= post.blurb %> ...</p>
   <%= link_to "Read More ...", post %>
 </div>

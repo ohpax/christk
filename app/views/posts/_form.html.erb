@@ -22,6 +22,11 @@
 		<%= f.label :content, "Write you article here", class: "control-label" %> 
 		<%= f.text_area :content, rows: 25, class: "form-control" %>
 	</div>
+
+	<div class="form-group">
+		<%= f.label :blurb, "Write you article here", class: "control-label" %> 
+		<%= f.text_area :blurb, rows: 5, class: "form-control" %>
+	</div>
 	
 	<%= f.submit %>
 <% end %>
