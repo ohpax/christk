@@ -1,0 +1,43 @@
+@import "global";
+
+.pagination {
+  text-align: center;
+  padding: 0.3em;
+  cursor: default; 
+
+  a, span,  em {
+    padding: 0.2em 0.5em; }
+  
+  .disabled {
+    color: #aaaaaa; }
+
+  .current {
+    font-style: normal;
+    font-weight: bold;
+    color:$light-gray;
+    background-color: $alpha-yellow;
+     }
+  
+   a {
+    border: 1px solid $alpha-orange;
+    color: $gray;
+    text-decoration: none; }
+ 
+   a:hover, a:focus {
+      border-color: $gray;
+      background: $alpha-orange;
+      color: white; }
+  
+   .page_info {
+      color: #aaaaaa;
+      padding-top: 0.8em; }
+  
+  .previous_page, .next_page {
+    border-width: 2px; }
+  
+  .previous_page {
+    margin-right: 1em; }
+  
+  .next_page {
+    margin-left: 1em; }
+}
