@@ -1,17 +1,6 @@
 @import "global";
 
-.border{
-		&:after {
-			content: "";
-			position: absolute;
-			height: 8px;
-			border-bottom: 2px solid $alpha-yellow;
-			border-top: 2px solid $alpha-yellow;
-			top: 294px;
-			width: 100%;
-		}
 
-	}
 	.header-small-outer {
 				// background: url("<%= asset_path 'christ4.jpg' %>") ;
 						position: static;

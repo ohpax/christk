@@ -92,8 +92,45 @@ a{
 	margin-top: 0;
 }
 
+.border {
+		&:after {
+			content: "";
+			position: absolute;
+			height: 8px;
+			border-bottom: 2px solid $alpha-yellow;
+			border-top: 2px solid $alpha-yellow;
+			top: 294px;
+			width: 100%;
+		}
+
+	}
+
+	.border_sm {
+		&:after {
+			content: "";
+			position: absolute;
+			height: 8px;
+			border-bottom: 2px solid $alpha-yellow;
+			border-top: 2px solid $alpha-yellow;
+			top: 294px;
+			width: 30%;
 
 
+		}
+
+	
+
+	}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid $light-gray;
+    margin: 2em auto;
+    padding: 0; 
+    width: 50%;
+}
 
 /*------------------------
 --------Works--------
@@ -108,8 +145,8 @@ a{
 	transform: skewY(4deg);
 	background-color: #fff;
 
-	padding-top: 150px;
-	padding-bottom: 100px;
+	padding-top: 100px;
+	// padding-bottom: 100px;
 	margin-top: -50px;
 }
 .blur {

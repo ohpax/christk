@@ -1,5 +1,12 @@
 <%= render 'shared/header' %>
 <div id="post-index" class="skinny_wrapper">
-	<h1 id="page_title">My Writings</h1>
-   <%= render @posts %>
+	<h1 id="page_title" >My Writings</h1>
+	<h2 class="lined-h"><span><i class="fa fa-pencil" aria-hidden="true"></i>
+</span></h2>
+	<% @posts.each do |post| %>
+
+   <%= render post %>
+		<div class="border"></div>
+		<hr>
+		<% end %>
 </div>
