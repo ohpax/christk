@@ -22,14 +22,14 @@ $(document).on('ready page:load', function() {
 
 	// Works ==> show and hide the info div //
 	$(".info").hide();
-	$(".work-outer").mouseover(function(){
+	$(".project-outer").mouseover(function(){
 		$(".info",this).fadeIn(300);
-		$(".work",this).addClass("blur");
+		$(".project",this).addClass("blur");
 
 
 	}).mouseleave(function(){
 		$(".info",this).fadeOut(300);
-		$(".work",this).removeClass("blur");
+		$(".project",this).removeClass("blur");
 	});
 
 	// Centering images in posts

@@ -13,6 +13,7 @@ html,body {
 body {
 	position: relative;
 	font-family: 'Comfortaa', cursive;
+	font-size: 1.7em;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -36,6 +37,42 @@ a{
 
 }
 
+.project_button {
+
+						
+						padding: 15px 10px;
+
+						background-color: $alpha-orange;
+						text-decoration: none;
+						color: #fff;
+						text-align: center;
+						text-transform: uppercase;
+
+						-webkit-transition: all 600ms;
+										transition: all 600ms;
+
+						-webkit-transition-property: color;
+										transition-property: color;
+
+						&:hover {
+							color: $dark-orange;
+							background-color: rgba(255,255,255,0.9);
+							text-decoration: none;
+							border: 1px solid $dark-orange;
+
+						}
+
+						&:focus {
+							background-color: $alpha-orange;
+							text-decoration: none;
+							color: #fff;
+						}
+	}
+
+.button_wrapper {
+	padding: 4em 0 0 0;
+	text-align: center;
+}	
 .row { 
 	margin-right: 0;
 	margin-left: 0;
@@ -190,63 +227,7 @@ hr {
 			}
 		}
 
-	.portfolio {
-
-		.work-outer {
-			position: relative;
-			margin: 0;
-			padding: 0;
-			min-height: 300px;
-			z-index: 1;
-				.work {
-					margin: 0;
-					padding: 15px;
-					position: relative;
-					min-height: 300px;
-					z-index: 1;
-					}
-				.info {
-
-					z-index: 100;
-					position: absolute;
-					height: 100%;
-					width: 100%;
-					top:0;
-					left: 0;
-
-				a{
-
-						z-index: 100;
-						display: block;
-						width: 150px;
-
-						margin-left: auto;
-						margin-right: auto;
-						margin-top: 40%;
-						padding: 15px 10px;
-
-						// background-color: rgba(200,55,0,.9);
-						background-color: $alpha-orange;
-						text-decoration: none;
-						color: #fff;
-						text-align: center;
-						text-transform: uppercase;
-
-						-webkit-transition: all 600ms;
-										transition: all 600ms;
-
-						-webkit-transition-property: color;
-										transition-property: color;
-
-						&:hover {
-							color: #c83700;
-							background-color: rgba(255,255,255,0.9);
-						}
-
-					}
-				}
-			}
-		}
+	
 	}
 
 	.image {

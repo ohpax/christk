@@ -1,0 +1,33 @@
+	
+<%= form_for (@project), class: "form-horizontal" do |f| %>
+	<% if @project.errors.any? %>
+		<h2><%= pluralize(@project.errors.count, "error") %> prevented this project from saving: </h2>
+		<ul>
+			<% @project.errors.full_messages.each do |msg| %>
+			<li><%= msg %></li>
+			<% end %>
+		</ul>
+
+	<% end %>
+
+	<div class="form-group">
+		<%= f.label :title, class: "control-label" %> 
+		<%= f.text_field :title, class: "form-control" %>
+	</div>
+
+	<div class="form-group">
+		<%= f.label :skills, class: "control-label" %> 
+		<%= f.text_field :skills, class: "form-control" %>
+	</div>
+	<div class="form-group">
+		<%= f.label :description, class: "control-label" %> 
+		<%= f.text_area :description, rows: 25, class: "form-control" %>
+	</div>
+
+	<div class="form-group">
+		<%= f.label :link, class: "control-label" %> 
+		<%= f.text_field :link, class: "form-control" %>
+	</div>
+	
+	<%= f.submit %>
+<% end %>

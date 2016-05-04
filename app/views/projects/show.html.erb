@@ -1,0 +1,13 @@
+<div class="post-show">
+		<%= render 'shared/header' %>
+
+	<div id="post" class="skinny_wrapper">
+		<h1><%= @project.title %></h1>
+		<p class="date lined-h"><span><%= @project.created_at.strftime("%A, %b %d") %></span></p>
+		<div class="body">
+			<%= markdown @project.description %>
+		</div>
+		<div class="button_wrapper">
+			<%= link_to "Visit #{@project.title}", @project.link, target: "_blank", class: "project_button" %>
+		</div>
+</div>

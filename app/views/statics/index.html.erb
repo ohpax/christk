@@ -27,62 +27,13 @@
         <div class="main col-xs-12">
           <div class="portfolio col-sm-6 ">
             <h2 class="lined-h" ><span>Works</span></h2>
-            <!-- <hr class="header-line"> -->
-            <div class="work-outer col-sm-6">
-            <div class="work ">
-              <div class="image">
-                <img src="http://frame-maker-cheetah-38007.bitballoon.com/img/works/work1.jpg" alt="" />
-                <h3>Calculator</h3>
-                <p>javascript, css, html</p>
-              </div>
-             
-            </div>
-             <div class="info">
-                <a href="">View Project</a>                
-              </div>
-            </div>
-             <div class="work-outer col-sm-6">
-            <div class="work ">
-              <div class="image">
-                <img src="http://frame-maker-cheetah-38007.bitballoon.com/img/works/work2.jpg" alt="" />
-                <h3>Calculator</h3>
-                <p>javascript, css, html, Ruby on Rails, Angular.js</p>
-              </div>
-             
-            </div>
-             <div class="info">
-                <a href="">View Project</a>                
-              </div>
-            </div>
-            <div class="work-outer col-sm-6">
-            <div class="work ">
-              <div class="image">
-                <img src="http://frame-maker-cheetah-38007.bitballoon.com/img/works/work3.jpg" alt="" />
-                <h3>Calculator</h3>
-                <p>javascript, css, html, Ruby on Rails, Angular.js</p>
-              </div>
-             
-            </div>
-             <div class="info">
-                <a href="">View Project</a>                
-              </div>
-            </div>
-            <div class="work-outer col-sm-6">
-            <div class="work ">
-              <div class="image">
-                <img src="http://frame-maker-cheetah-38007.bitballoon.com/img/works/work4.jpg" alt="" />
-                <h3>Calculator</h3>
-                <p>javascript, css, html, Ruby on Rails, Angular.js</p>
-              </div>
-             
-            </div>
-             <div class="info">
-                <a href="">View Project</a>                
-              </div>
-            </div>
-            
+            <%= render @projects %>
+
             <div class="view-all col-xs-12">
-              <a href="#">View All <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
+              <%=link_to (projects_path) do %>
+                  View All
+                 <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+              <% end %>
             </div>
           </div>
 
