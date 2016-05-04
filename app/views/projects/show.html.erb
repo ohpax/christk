@@ -9,5 +9,9 @@
 		</div>
 		<div class="button_wrapper">
 			<%= link_to "Visit #{@project.title}", @project.link, target: "_blank", class: "project_button" %>
+
+			
 		</div>
 </div>
+<%= link_to "Edit", edit_project_path(@project) %> <br>
+			<%= link_to "Delete", project_path(@project), method: :delete, data: {confirm: "Are you sure?"} %>
