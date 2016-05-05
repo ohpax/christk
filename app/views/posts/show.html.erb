@@ -18,15 +18,15 @@
     <!-- Google Plus -->
     <a onclick="javascript:window.open('https://plus.google.com/share?url=<%= url_for([@post, {only_path: false}]) %>', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-google-plus"></i></a>
 	</div>
+	<%if user_signed_in? %>
+		<div id="admin_box">
+			<%= link_to "Edit", edit_post_path(@post) %> 
+			<%= link_to "Delete", post_path(@post), method: :delete, data: {confirm: "Are you sure you want to delete this post? "} %>
 		</div>
-	</div>
-	<br>
+	<%end%>
 	<div class="row">
-		<div class="col-xs-10 col-xs-offset-1 clearfix">
 		<%= render 'disqus' %>
-		</div>
 	</div>
-	<%= link_to "Edit", edit_post_path(@post) %> <br>
-	<%#= link_to "Delete", post_path(@post), method: :delete, data: {confirm: "Are you sure you want to delete this post? "} %>
-
+	</div>
 </div>
+
