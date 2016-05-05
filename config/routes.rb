@@ -4,4 +4,6 @@ Rails.application.routes.draw do
   resources :posts
   resources :contacts, only: [:new, :create]
   root 'statics#index'
+
+  get '*path' => redirect('/')
 end
