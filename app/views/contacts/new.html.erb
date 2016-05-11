@@ -1,7 +1,10 @@
 <%= render 'shared/header' %>
 
-<h1>Contact Me</h1>
 <div class="skinny_wrapper">
+		<h1 id="page_title" >Contact Me</h1>
+		<h2 class="lined-h"><span><i class="fa fa-envelope-o" aria-hidden="true"></i>
+</span></h2>
+
 	<%= form_for @contact do |f| %>
 		<div class="form-group">
 			<%= f.label :name, class: "control-label" %>
@@ -22,8 +25,8 @@
 			<%= f.label :nickname %><br>
 			<%= f.text_field :nickname, hint: 'leave this field blank'%>
 		</div>
-
-		<%= f.submit 'Send Message', class: 'project_button' %>
-
+		<div class="button_wrapper">
+			<%= f.submit 'Send Message', class: 'project_button' %>
+		</div>
 	<% end %>
 </div>

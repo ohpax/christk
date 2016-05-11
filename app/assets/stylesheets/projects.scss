@@ -1,7 +1,41 @@
 #project-index {
 	text-align: center;
-	
-	h2 i {
-		margin-top: -0.5em;
+
+}
+
+#project-show {
+
+	#project {
+				 margin:auto;
+				 padding: 50px 0 ;
+
+
+	h1 {
+			 // position: absolute;
+			display: block;
+			text-align: center;
+
+		}
+
+		.date {
+			text-align: center;
+		}
+
+	.body {
+		font-size: 1.1em;
+		padding: 0 5%;
+
+		img {
+  		margin: 1em;
+			}
+		
+	}	
+
+	#project_image	{
+		img {
+			margin: auto;
+			margin-bottom: 5em;
+		}
 	}
+}
 }

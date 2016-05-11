@@ -31,6 +31,10 @@ h1 {
 	margin: 50px auto;
 }
 
+.center {
+	text-align: center;
+}
+
 a{
 	color: $alpha-orange;
 	transition: all 600ms;
@@ -74,14 +78,10 @@ a{
 	}
 
 .button_wrapper {
-	padding: 4em 0 0 0;
+	padding: 1.5em 0 0 0;
 	text-align: center;
 }	
-.row { 
-	margin-right: 0;
-	margin-left: 0;
 
-}
 
 .skinny_wrapper {
 	 width: 80%;
@@ -123,6 +123,10 @@ a{
 			margin-left: 15px;
 		}
 	}
+
+	i {
+		margin-top: -0.5em;
+	}
 }
 
 
@@ -133,18 +137,18 @@ a{
 	margin-top: 0;
 }
 
-.border {
-		&:after {
-			content: "";
-			position: absolute;
-			height: 8px;
-			border-bottom: 2px solid $alpha-yellow;
-			border-top: 2px solid $alpha-yellow;
-			top: 294px;
-			width: 100%;
-		}
+// .border {
+// 		&:after {
+// 			content: "";
+// 			position: absolute;
+// 			height: 8px;
+// 			border-bottom: 2px solid $alpha-yellow;
+// 			border-top: 2px solid $alpha-yellow;
+// 			top: 294px;
+// 			width: 100%;
+// 		}
 
-	}
+// 	}
 
 	.border_sm {
 		&:after {
@@ -155,12 +159,7 @@ a{
 			border-top: 2px solid $alpha-yellow;
 			top: 294px;
 			width: 30%;
-
-
 		}
-
-	
-
 	}
 
 hr {
@@ -223,7 +222,7 @@ hr {
 
 	.view-all {
 			margin-top: 30px;
-			margin-bottom: 70px;
+			// margin-bottom: 70px;
 			text-align: center;
 			font-size: 1.5em;
 			a:hover {

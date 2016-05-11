@@ -1,9 +1,12 @@
-<div class="post-show">
+<div id="project-show">
 		<%= render 'shared/header' %>
 
-	<div id="post" class="skinny_wrapper">
+	<div id="project" class="skinny_wrapper">
 		<h1><%= @project.title %></h1>
 		<p class="date lined-h"><span><%= @project.created_at.strftime("%A, %b %d") %></span></p>
+		<div id="project_image">
+      <%= image_tag @project.image.url(:medium), class: "img-responsive" %>
+		</div>
 		<div class="body">
 			<%= markdown @project.description %>
 		</div>

@@ -24,8 +24,11 @@
 	margin-left: 0;
 }
 .nav-scrolled {
-	margin-top: 5px;
-	background-color: #fff;
+	margin-top: 0px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+
+	background-color: rgba(0,0,0,0.5);
 }
 
 .navbar-nav>li {
